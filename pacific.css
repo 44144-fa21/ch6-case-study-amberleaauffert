@@ -1,3 +1,5 @@
+*{box-sizing: border-box;
+}
 body { background-color: #3399CC;
       color: #666666;
 	  font-family: Verdana, Arial, sans-serif;
@@ -5,8 +7,8 @@ body { background-color: #3399CC;
 }
 header { background-color: #000033;
          color: #FFFFFF;
-		 font-family: Georgia, serif; 
-		 
+		 font-family: Georgia, serif;
+
 }
 h1 { line-height: 200%;
      background-image: url(sunset.jpg);
@@ -17,23 +19,41 @@ h1 { line-height: 200%;
 	 margin-bottom: 0;
 }
 nav { font-weight: bold;
-      background-color: #90C7E3; 
-	  padding: .5em .5em .5em 2em;
+    float: left; width: 160px;
+	  padding: 0em;
+}
+nav ul {list-style-type: none;
+	padding-left: 1em;
+}
+nav a:link {
+	color: #ffffff;
+}
+nav a:visited {color: #C2E0F0;
+}
+nav a:hover {
+	color: #cccccc;
 }
 h2 { color: #3399CC;
      font-family: Georgia, serif;
 }
 h3 { color: #000033; }
-dt { color: #000033; 
-   font-weight: bold; 
+main {background-color: #ffffff;
+	 margin-left: 170px;
+   padding-top: 1px;
+   padding-bottom: 1px;
+ }
+dt { color: #000033;
+   font-weight: bold;
 }
 .resort { color: #000033;
           font-size: 1.2em;
 }
 footer { font-size: .70em;
          font-style: italic;
-		 text-align: center; 
+		 text-align: center;
 		 padding: 1em;
+     background-color: #ffffff;
+     margin-left: 170px;
 }
 main { padding-left: 2em;
       padding-right: 2em;
@@ -43,23 +63,27 @@ main { padding-left: 2em;
            background-image: url(coast.jpg);
 		   background-size: 100% 100%;
 		   background-repeat: no-repeat;
+       margin-left: 170px;
 }
 #yurthero { height: 300px;
            background-image: url(yurt.jpg);
 		   background-size: 100% 100%;
 		   background-repeat: no-repeat;
+       margin-left: 170px;
 }
 #trailhero { height: 300px;
            background-image: url(trail.jpg);
 		   background-size: 100% 100%;
 		   background-repeat: no-repeat;
+       margin-left: 170px;
 }
 nav a { text-decoration: none; }
 #wrapper { width: 80%;
-          margin-left: auto;
+      margin-left: auto;
 		  margin-right: auto;
-		  background-color: #FFFFFF;
+		  background-color: #000033;
 		  min-width: 700px;
 		  max-width: 1024px;
 		  box-shadow: 3px 3px 3px #000033;
 }
+header, nav, main, footer {display: block;}
